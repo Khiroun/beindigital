@@ -1,7 +1,7 @@
 import CommunicationHero from "../widgets/HeroItem/Communication";
 import Nav from "../widgets/Header/Nav";
 import ServiceSection from "../widgets/ServiceSection";
-import UL from "../components/Ul";
+import UL from "../components/UList";
 import Head from "next/head";
 
 const Main = () => {

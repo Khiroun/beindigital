@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import FormationHero from "../widgets/HeroItem/Formation";
 import Nav from "../widgets/Header/Nav";
 import ServiceSection from "../widgets/ServiceSection";
-import UL from "../components/UL";
+import UL from "../components/UList";
 import Head from "next/head";
 
 const useStyles = makeStyles((theme) => ({
