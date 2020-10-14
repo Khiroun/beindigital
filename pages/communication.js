@@ -58,7 +58,7 @@ const Main = () => {
   );
 };
 
-const Communication = () => {
+const communication = () => {
   return (
     <div>
       <Nav />
@@ -69,4 +69,4 @@ const Communication = () => {
   );
 };
 
-export default Communication;
+export default communication;
