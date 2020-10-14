@@ -4,9 +4,9 @@ const whyUs = [
       url: "assets/1.svg",
       title: "Digital, Web et identite numerique",
     },
-    title: "Digital, Web et identite numerique",
+    title: "Digital, Web et identité numérique",
     description:
-      "En ce qui concerne le digital, vous aurez besoin d'une agence de marketing qui dispose d'une expertise dans tous les domaines, depuis les sites web jusqu'aux reseaux sociaux en passant par la publicite sur le web",
+      "En ce qui concerne le digital, vous aurez besoin d'une agence de marketing qui dispose d'une expertise dans tous les domaines, depuis les sites web jusqu'aux réseaux sociaux en passant par la publicité sur le web",
     href: "digital",
   },
 
@@ -17,7 +17,7 @@ const whyUs = [
     },
     title: "Formation",
     description:
-      "Afin d'acquérir de nouvelles competences au profit de vos employés, nous vous proposons des formations dans le cadre B2B.",
+      "Afin d'acquérir de nouvelles compétences au profit de vos employés, nous vous proposons des formations dans le cadre B2B.",
 
     href: "formations",
   },
@@ -30,7 +30,7 @@ const whyUs = [
     title: "Communication",
     description:
       "BEIN DIGITAL AGENCY vous guidera pour que vos actions soient visibles et accessibles sur tous les écrans et sur tous les nouvaux supports numériques",
-    href: "digital",
+    href: "communication",
   },
   {
     image: {
@@ -39,7 +39,7 @@ const whyUs = [
     },
     title: "Evénementiel",
     description:
-      "Nous organisons pour vous des événements professionnels: formations, conferences, congres, conventions d’entreprises, incentives, roadshow, salons, séminaires, soirées d’entreprises, team building, voyages d’affaires …  ",
+      "Nous organisons pour vous des événements professionnels: formations, conférences, congrès, conventions d’entreprises, incentives, roadshow, salons, séminaires, soirées d’entreprises, team building, voyages d’affaires …  ",
     href: "evenements",
   },
 ];
