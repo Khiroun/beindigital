@@ -1,6 +1,7 @@
 import EventHero from "../widgets/HeroItem/Event";
 import Nav from "../widgets/Header/Nav";
 import ServiceSection from "../widgets/ServiceSection";
+import Head from "next/head";
 
 const Evenements = () => {
   return (

@@ -42,9 +42,9 @@ const Header = () => {
           enableAutoPlay={true}
           enableTilt={true}
           onNextEnd={({ index }) => {
-            if (index + 1 === NB_PAGES && carouselRef.current) {
+            if (index + 1 === NB_PAGES) {
               setTimeout(() => {
-                carouselRef.current.goTo(0);
+                carouselRef.current && carouselRef.current.goTo(0);
               }, 2000);
             }
           }}
