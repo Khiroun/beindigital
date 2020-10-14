@@ -82,6 +82,7 @@ const ContactInfo = () => {
         <EmailIcon className={styles.icon} />
         <div>
           <h2>beindigital.dz@gmail.com</h2>
+          <h2>contact@bein-digital.com</h2>
         </div>
       </ContactInfoItem>
       <ContactInfoItem>

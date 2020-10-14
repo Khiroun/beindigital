@@ -33,7 +33,19 @@ export default function Home() {
         </title>
       </Head>
       <Header renderTitle={renderTitle} />
-
+      <p
+        style={{
+          textAlign: "center",
+          width: "50%",
+          textAlign: "center",
+          margin: "auto",
+        }}
+      >
+        Agence BEIN DIGITAL AGENCY apporte des solutions de communication à tous
+        les types d’entreprises ou institutions, grâce à notre large gamme
+        d’action, nous pouvons assurer l’intégralité de vos projets, de leur
+        conception à leur réalisation ...
+      </p>
       <WhyUs />
     </>
   );

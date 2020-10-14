@@ -2,10 +2,11 @@ import EventHero from "../widgets/HeroItem/Event";
 import Nav from "../widgets/Header/Nav";
 import ServiceSection from "../widgets/ServiceSection";
 import Head from "next/head";
+import { Container } from "@material-ui/core";
 
 const Evenements = () => {
   return (
-    <div>
+    <Container>
       <Head>
         <title>
           Evènements - Being digital, meilleure agence de marketing digital en
@@ -22,13 +23,13 @@ const Evenements = () => {
               conférence, congrès, convention d’entreprise, incentives,
               roadshow, salon, séminaire, soirée d'entreprise, team building,
               voyages d’affaires... ( une prestation complète de A à Z ou
-              partielle) * Et les évènements personnels : mariage, fiançailles,
-              etc
+              partielle)
             </p>
+            <p>Et les évènements personnels : mariage, fiançailles, etc</p>
           </div>
         </ServiceSection>
       </div>
-    </div>
+    </Container>
   );
 };
 
