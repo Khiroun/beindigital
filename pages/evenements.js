@@ -19,7 +19,15 @@ const Evenements = () => {
         <ServiceSection>
           <div>
             <p>
-              Organisation des évènements professionnels : formation,
+              Il y a toujours une bonne raison pour créer un événement avec vos
+              équipes et/ou vos clients.
+            </p>
+            <p>
+              Peu importe le format de votre événement, l'équipe{" "}
+              <b>BEIN DIGITAL EVENTS</b> est là pour vous.
+            </p>
+            <p>
+              Nous Organisons des événements professionnels : formation,
               conférence, congrès, convention d’entreprise, incentives,
               roadshow, salon, séminaire, soirée d'entreprise, team building,
               voyages d’affaires... ( une prestation complète de A à Z ou

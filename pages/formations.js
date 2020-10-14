@@ -96,7 +96,7 @@ const Main = () => {
           </p>
         </div>
         <div>
-          <p>Pour cela nous vous proposons des forma tions ans le cadre B2B:</p>
+          <p>Pour cela nous vous proposons des formations dans le cadre B2B:</p>
           <UL>
             <li>Cours de langues</li>
             <li>Community manager</li>
@@ -108,9 +108,8 @@ const Main = () => {
             <li>Création d’entreprise</li>
             <li>Formation Marketing digital</li>
             <li>Formation e-commerce</li>
-            <li>Formation workshop management des projets</li>
+            <li>Formation workshop management des projets...</li>
           </UL>
-          <p>Nous vous proposons aussi le service de community manager</p>
         </div>
       </ServiceSection>
     </div>

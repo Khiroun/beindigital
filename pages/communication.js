@@ -42,12 +42,12 @@ const Main = () => {
           réussite.
         </p>
         <p>
-          L’Agence conseil en communication BEIN DIGITAL AGENCY vous guidera
-          pour que vos actions soient visibles et accessibles sur tous les
-          écrans et sur tous les nouveaux supports numériques, optez pour une
-          communication créative et interactive qui caractérise notre époque.
-          Grâce entre autres aux réseaux sociaux, vous allez entrer en contact
-          direct avec vos utilisateurs finaux, on parle, on parle ... de vous.
+          L’Agence BEIN DIGITAL AGENCY vous guidera pour que vos actions soient
+          visibles et accessibles sur tous les écrans et sur tous les nouveaux
+          supports numériques, optez pour une communication créative et
+          interactive qui caractérise notre époque. Grâce entre autres aux
+          réseaux sociaux, vous allez entrer en contact direct avec vos
+          utilisateurs finaux, on parle, on parle ... de vous.
         </p>
         <div>
           <UL>
@@ -87,7 +87,7 @@ const Main = () => {
           <p>
             Notre agence sait allier ergonomie et créativité. Le design de votre
             site web est étudié pour pouvoir être à la fois facile d’utilisation
-            mais aussi accrocheur parmi les millions de sites présent sur la
+            mais aussi accrocheur parmi les millions de sites présents sur la
             toile. En veille permanente sur les nouvelles tendances en termes de
             design digital, nous vous proposons une interface adaptée à votre
             identité et à votre projet.

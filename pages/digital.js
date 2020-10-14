@@ -76,12 +76,12 @@ const Main = () => {
         <div>
           <p>
             En ce qui concerne le digital, vous aurez besoin d'une agence de
-            marketing qui dispose d'une expertise dans tous les domaines
+            marketing qui dispose d'une expertise dans tous les domaines.
           </p>
           <p>
             L'objectif est de promouvoir vos services, fidéliser votre clientèle
             et d'augmenter vos ventes grâce aux operations de marketing
-            numérique
+            numérique.
           </p>
         </div>
 
@@ -102,7 +102,7 @@ const Main = () => {
             <li>L'élaboration de stratégies</li>
             <li>Marketing en ligne</li>
           </UL>
-          <p>Nous vous proposons aussi le service de community manager</p>
+          <p>Nous vous proposons aussi le service de community manager.</p>
         </div>
       </ServiceSection>
     </div>

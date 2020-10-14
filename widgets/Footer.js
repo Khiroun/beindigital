@@ -29,7 +29,7 @@ const Footer = () => {
 
               <li>
                 <Link href="formations">
-                  <MLink>Formations</MLink>
+                  <MLink>Formation</MLink>
                 </Link>
               </li>
 
