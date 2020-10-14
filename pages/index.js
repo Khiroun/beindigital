@@ -39,6 +39,9 @@ export default function Home() {
           width: "50%",
           textAlign: "center",
           margin: "auto",
+          fontSize: "2rem",
+          fontFamily: "Rubik",
+          color: "#757575",
         }}
       >
         Agence BEIN DIGITAL AGENCY apporte des solutions de communication à tous
