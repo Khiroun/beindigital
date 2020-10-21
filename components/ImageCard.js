@@ -11,23 +11,32 @@ import theme from "../src/theme";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 645,
+    maxWidth: 600,
     backgroundColor: "rgba(0,0,0,0.3)",
     margin: "20px",
   },
   media: {
     height: 440,
+    [theme.breakpoints.down("md")]: {
+      height: 300,
+    },
   },
   title: {
     fontFamily: "Nunito",
     fontWeight: "bold",
     fontSize: "2rem",
     color: theme.palette.primary.dark,
+    [theme.breakpoints.down("md")]: {
+      fontSize: '1rem',
+    },
   },
   desc: {
     fontFamily: "Nunito",
     fontSize: "1.1rem",
     color: theme.palette.secondary.dark,
+    [theme.breakpoints.down("md")]: {
+      fontSize: '0.8rem'
+    },
   },
 });
 

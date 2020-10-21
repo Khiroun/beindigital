@@ -20,6 +20,10 @@ const myUseStyles = (bg) => {
       alignItems: "center",
       backgroundImage: `url(assets/${bg})`,
       marginBottom: "3rem",
+      [theme.breakpoints.down("md")]: {
+        minHeight: '60vh',
+        marginBottom: "1.5rem"
+      },
     },
   }));
   return tmpStyles;

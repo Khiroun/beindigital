@@ -1,7 +1,8 @@
-import { AppBar, Button, Toolbar } from "@material-ui/core";
+import { AppBar, Button, Grid, List, ListItem, SwipeableDrawer, Toolbar, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import MenuIcon from '@material-ui/icons/Menu'
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,53 +30,140 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   menu: {
-    [theme.breakpoints.down("sm")]: {
-      flexDirection: "column",
-    },
     display: "flex",
   },
+  sideBarIcon : {
+    padding : 0,
+    color : "white",
+    cursor : "pointer",
+  }
 }));
 
 export default function Nav() {
   const styles = useStyles();
-  const [mobileOpen, setMobileOpen] = useState(false);
-  function handleDrawerToggle() {
-    setMobileOpen(!mobileOpen);
+  const [drawerActivate, setDrawerActivate] = useState(false)
+  const [drawer, setDrawer] = useState(false)
+  useEffect(()=>{
+    if(typeof window !== "undefined"){
+      if(window.innerWidth <= 790){
+        setDrawerActivate(true)
+      }
+      window.addEventListener('resize',()=>{
+        if(window.innerWidth <= 790){
+          setDrawerActivate(true)
+        }
+        else{
+          setDrawerActivate(false)
+        }
+      });
+    }
+  }, [])
+  const destroyDrawer = ()=>{
+    return (
+      <AppBar className={styles.appBar} elevation={0}>
+        <Toolbar className={styles.appBarWrapper}>
+          <span>
+            <Link href="/">
+              <img
+                src="assets/img/Logo.png"
+                alt="bein-digital meilleure agence do communication digitale en Algérie logo"
+                height='40px'
+              />
+            </Link>
+          </span>
+          <span className={styles.menu}>
+            <Link href="/">
+              <Button className={styles.icon}>Accueil</Button>
+            </Link>
+            <Link href="digital">
+              <Button className={styles.icon}>Digital</Button>
+            </Link>
+            <Link href="formations">
+              <Button className={styles.icon}>Formation</Button>
+            </Link>
+            <Link href="communication">
+              <Button className={styles.icon}>Communication</Button>
+            </Link>
+            <Link href="evenements">
+              <Button className={styles.icon}>Evenements</Button>
+            </Link>
+            <Link href="contact">
+              <Button className={styles.icon}>Contact</Button>
+            </Link>
+          </span>
+        </Toolbar>
+      </AppBar>
+    );  
+  }
+
+  const createDrawer = ()=>{
+    return <div>
+      <AppBar className={styles.appBar}>
+      <Toolbar className={styles.appBarWrapper}>
+            <Grid container direction = "row" justify = "space-between" alignItems="center">
+              <MenuIcon
+                className = {styles.sideBarIcon}
+                onClick={()=>{setDrawer(true)}} />
+
+              
+            </Grid>
+          </Toolbar>
+      </AppBar>
+      <SwipeableDrawer
+         open={drawer}
+         onClose={()=>{setDrawer(false)}}
+         onOpen={()=>{setDrawer(true)}}>
+
+           <div
+             tabIndex={0}
+             role="button"
+             onClick={()=>{setDrawer(false)}}
+             onKeyDown={()=>{setDrawer(false)}}>
+            
+            <List>
+               <ListItem key = {1} button divider><Link href="/">
+              <Button className={styles.icon}>Accueil</Button>
+            </Link></ListItem>
+               <ListItem key = {2} button divider>
+               <Link href="digital">
+              <Button className={styles.icon}>Digital</Button>
+            </Link>
+           
+               </ListItem>
+               <ListItem key = {3} button divider>
+               <Link href="formations">
+              <Button className={styles.icon}>Formation</Button>
+            </Link>
+            
+               </ListItem>
+               <ListItem button divider>
+               <Link href="communication">
+              <Button className={styles.icon}>Communication</Button>
+            </Link>
+            
+            
+               </ListItem>
+               <ListItem button divider>
+               <Link href="evenements">
+              <Button className={styles.icon}>Evenements</Button>
+            </Link>
+               </ListItem>
+               <ListItem button divider>
+               <Link href="contact">
+              <Button className={styles.icon}>Contact</Button>
+            </Link>
+            
+               </ListItem>
+             </List>
+
+         </div>
+       </SwipeableDrawer>
+    </div>
   }
 
   return (
-    <AppBar className={styles.appBar} elevation={0}>
-      <Toolbar className={styles.appBarWrapper}>
-        <span>
-          <Link href="/">
-            <img
-              src="assets/img/Logo.png"
-              alt="bein-digital meilleure agence do communication digitale en Algérie logo"
-              width="10%"
-            />
-          </Link>
-        </span>
-        <span className={styles.menu}>
-          <Link href="/">
-            <Button className={styles.icon}>Accueil</Button>
-          </Link>
-          <Link href="digital">
-            <Button className={styles.icon}>Digital</Button>
-          </Link>
-          <Link href="formations">
-            <Button className={styles.icon}>Formation</Button>
-          </Link>
-          <Link href="communication">
-            <Button className={styles.icon}>Communication</Button>
-          </Link>
-          <Link href="evenements">
-            <Button className={styles.icon}>Evenements</Button>
-          </Link>
-          <Link href="contact">
-            <Button className={styles.icon}>Contact</Button>
-          </Link>
-        </span>
-      </Toolbar>
-    </AppBar>
+    <div>
+      {drawerActivate? createDrawer() : destroyDrawer()}
+    </div>
   );
 }
