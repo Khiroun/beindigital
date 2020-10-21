@@ -19,6 +19,8 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     margin: "0 auto",
     backgroundColor: "rgba(50,50,50,0.9)",
+    display: 'flex',
+    justifyContent: 'space-between',
   },
   icon: {
     fontSize: "1.2rem",
