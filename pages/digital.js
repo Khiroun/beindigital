@@ -1,5 +1,4 @@
 import { Card, CardMedia, Container, makeStyles } from "@material-ui/core";
-import { useEffect, useState } from "react";
 import DigitalHero from "../widgets/HeroItem/Digital";
 import Nav from "../widgets/Header/Nav";
 import ServiceSection from "../widgets/ServiceSection";
@@ -11,6 +10,14 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.secondary.dark,
     fontSize: "1.2rem",
     fontFamily: "Rubik",
+  },
+  container:{
+    
+    display: "flex",
+    flexWrap: "wrap",
+    [theme.breakpoints.down("md")]: {
+      flexDirection: 'column'
+    },
   },
   list: {
     color: theme.palette.secondary.main,
@@ -30,15 +37,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Digital = () => {
+  const styles = useStyles()
   return (
     <Container>
       <DigitalHero />
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-        }}
-      >
+      <div className={styles.container} >
         <Main />
         <SideCard />
       </div>

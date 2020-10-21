@@ -62,8 +62,8 @@ const Footer = () => {
       {/* Social buttons */}
       {/* Copyright */}
       <div style={{ textAlign: "center" }}>
-        © 2020 Copyright:
-        <a href="https://bein-digital.com/"> bein-digital.com</a>
+        © 2020 Copyright: 
+        <a href="https://beindigital.agency/"> beindigital.agency</a>
       </div>
       {/* Copyright */}
     </footer>
