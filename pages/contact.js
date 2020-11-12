@@ -4,6 +4,9 @@ import EmailIcon from "@material-ui/icons/Email";
 import RoomIcon from "@material-ui/icons/Room";
 import { makeStyles } from "@material-ui/core";
 import Head from "next/head";
+import { useState } from "react";
+import emailJs from "emailjs-com";
+
 const contact = () => {
   return (
     <div className="container-contact1">
@@ -111,14 +114,54 @@ const ContactMap = () => {
 };
 
 const ContactForm = () => {
+  const [loading, setLoading] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const templateParams = {
+      from_name: name,
+      to_name: "Bein Digital",
+      subject,
+      message,
+      email,
+    };
+    setLoading(true);
+    emailJs
+      .send(
+        "contact_service",
+        "contact_form",
+        templateParams,
+        "user_KCBjWbuFT2bfNs9rDOtXa"
+      )
+      .then((res) => {
+        console.log("Email Sent");
+        setLoading(false);
+      });
+  };
   return (
-    <form className="contact1-form validate-form" style={{ width: "90%" }}>
+    <form
+      className="contact1-form validate-form"
+      style={{ width: "90%" }}
+      onSubmit={handleSubmit}
+    >
       <span className="contact1-form-title">Contactez Nous</span>
+      {loading && <span>Envoie en cours ...</span>}
       <div
         className="wrap-input1 validate-input"
         data-validate="Name is required"
       >
-        <input className="input1" type="text" name="name" placeholder="Nom" />
+        <input
+          className="input1"
+          type="text"
+          name="name"
+          placeholder="Nom"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
         <span className="shadow-input1" />
       </div>
       <div
@@ -130,6 +173,8 @@ const ContactForm = () => {
           type="text"
           name="email"
           placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <span className="shadow-input1" />
       </div>
@@ -142,6 +187,8 @@ const ContactForm = () => {
           type="text"
           name="subject"
           placeholder="Objet"
+          value={subject}
+          onChange={(e) => setSubject(e.target.value)}
         />
         <span className="shadow-input1" />
       </div>
@@ -154,6 +201,8 @@ const ContactForm = () => {
           name="message"
           placeholder="Message"
           defaultValue={""}
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
         />
         <span className="shadow-input1" />
       </div>
