@@ -11,12 +11,11 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.2rem",
     fontFamily: "Rubik",
   },
-  container:{
-    
+  container: {
     display: "flex",
     flexWrap: "wrap",
     [theme.breakpoints.down("md")]: {
-      flexDirection: 'column'
+      flexDirection: "column",
     },
   },
   list: {
@@ -37,11 +36,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Digital = () => {
-  const styles = useStyles()
+  const styles = useStyles();
   return (
     <Container>
       <DigitalHero />
-      <div className={styles.container} >
+      <div className={styles.container}>
         <Main />
         <SideCard />
       </div>
@@ -70,7 +69,7 @@ const Main = () => {
     <div id="main" className={styles.main}>
       <Head>
         <title>
-          Digital - Being digital, meilleure agence de marketing digital en
+          Digital - Beindigital, meilleure agence de marketing digital en
           Algérie
         </title>
       </Head>

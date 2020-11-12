@@ -9,7 +9,7 @@ const contact = () => {
     <div className="container-contact1">
       <Head>
         <title>
-          Contactez Being digital, meilleure agence de marketing digital en
+          Contactez Beindigital, meilleure agence de marketing digital en
           Algérie
         </title>
       </Head>
@@ -82,7 +82,7 @@ const ContactInfo = () => {
         <EmailIcon className={styles.icon} />
         <div>
           <h2>beindigital.dz@gmail.com</h2>
-          <h2>contact@bein-digital.com</h2>
+          <h2>contact@beindigital.agency</h2>
         </div>
       </ContactInfoItem>
       <ContactInfoItem>

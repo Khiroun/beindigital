@@ -24,8 +24,8 @@ const Main = () => {
     <div id="main">
       <Head>
         <title>
-          Communication - Being digital, meilleure agence de marketing digital
-          en Algérie
+          Communication - Beindigital, meilleure agence de marketing digital en
+          Algérie
         </title>
       </Head>
       <ServiceSection>

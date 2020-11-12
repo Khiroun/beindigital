@@ -53,8 +53,12 @@ const Footer = () => {
               justifyContent: "space-between",
             }}
           >
-            <FacebookIcon />
-            <InstagramIcon />
+            <a href="https://www.facebook.com/BEIN-Agence-360-115236390385289">
+              <FacebookIcon />
+            </a>
+            <a href="https://www.instagram.com/beindigitalagency/">
+              <InstagramIcon />
+            </a>
             <LinkedInIcon />
           </div>
         </div>
@@ -62,7 +66,7 @@ const Footer = () => {
       {/* Social buttons */}
       {/* Copyright */}
       <div style={{ textAlign: "center" }}>
-        © 2020 Copyright: 
+        © 2020 Copyright:
         <a href="https://beindigital.agency/"> beindigital.agency</a>
       </div>
       {/* Copyright */}

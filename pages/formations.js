@@ -37,7 +37,7 @@ const Formation = () => {
     <Container>
       <Head>
         <title>
-          Formations - Being digital, meilleure agence de marketing digital en
+          Formations - Beindigital, meilleure agence de marketing digital en
           Algérie
         </title>
       </Head>

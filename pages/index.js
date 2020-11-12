@@ -12,19 +12,19 @@ const useStyles = makeStyles((theme) => ({
   secondaryDarkColorText: {
     color: theme.palette.secondary.dark,
   },
-  intro:{
+  intro: {
     textAlign: "center",
-          width: "50%",
-          textAlign: "center",
-          margin: "auto",
-          fontSize: "2rem",
-          fontFamily: "Rubik",
-          color: "#757575",
+    width: "50%",
+    textAlign: "center",
+    margin: "auto",
+    fontSize: "2rem",
+    fontFamily: "Rubik",
+    color: "#757575",
     [theme.breakpoints.down("md")]: {
       width: "90%",
-      fontSize: '1.5rem'
+      fontSize: "1.5rem",
     },
-  }
+  },
 }));
 
 export default function Home() {
@@ -42,13 +42,11 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Being digital, meilleure agence de marketing digital en Algérie
+          Beindigital, meilleure agence de marketing digital en Algérie
         </title>
       </Head>
       <Header renderTitle={renderTitle} />
-      <p
-        className={styles.intro}
-      >
+      <p className={styles.intro}>
         Agence BEIN DIGITAL AGENCY apporte des solutions de communication à tous
         les types d’entreprises ou institutions, grâce à notre large gamme
         d’action, nous pouvons assurer l’intégralité de vos projets, de leur

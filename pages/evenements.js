@@ -9,7 +9,7 @@ const Evenements = () => {
     <Container>
       <Head>
         <title>
-          Evènements - Being digital, meilleure agence de marketing digital en
+          Evènements - Beindigital, meilleure agence de marketing digital en
           Algérie
         </title>
       </Head>
